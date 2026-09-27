@@ -1,4 +1,4 @@
-# Tugas Web Pertemuan 6 - Interactive Quiz App
+# Tugas Rutin 6 Pemrograman Web - Interactive Quiz App
 
 Repository ini berisi Tugas Rutin Pertemuan 6 mata kuliah Pemrograman Web.
 
