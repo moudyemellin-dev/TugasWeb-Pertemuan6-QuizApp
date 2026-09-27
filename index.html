@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Interactive Quiz App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="quiz-app">
+
+        <header class="app-header">
+            <div>
+                <p class="eyebrow">Tugas Rutin 6</p>
+                <h1>🧠 Interactive Quiz App</h1>
+                <p class="subtitle">
+                    Uji pengetahuanmu tentang Pemrograman Web
+                </p>
+            </div>
+
+            <button
+                id="darkModeBtn"
+                class="dark-mode-btn"
+                type="button"
+                aria-label="Aktifkan dark mode"
+            >
+                🌙
+            </button>
+        </header>
+
+
+        <!-- START SCREEN -->
+        <section id="startScreen" class="start-screen">
+
+            <div class="welcome-card">
+                <h2>Siap Mulai Quiz?</h2>
+
+                <p>
+                    Pilih kategori soal lalu mulai quiz.
+                    Soal akan diacak setiap permainan.
+                </p>
+
+                <label for="categorySelect">
+                    Kategori
+                </label>
+
+                <select id="categorySelect">
+                    <option value="all">
+                        Semua Kategori
+                    </option>
+
+                    <option value="html">
+                        HTML
+                    </option>
+
+                    <option value="css">
+                        CSS
+                    </option>
+
+                    <option value="javascript">
+                        JavaScript
+                    </option>
+
+                    <option value="dom">
+                        DOM & Events
+                    </option>
+                </select>
+
+                <button
+                    id="startBtn"
+                    class="primary-btn"
+                    type="button"
+                >
+                    Mulai Quiz
+                </button>
+            </div>
+
+        </section>
+
+
+        <!-- QUIZ SCREEN -->
+        <section
+            id="quizScreen"
+            class="quiz-screen hidden"
+        >
+
+            <div class="quiz-topbar">
+
+                <div>
+                    <span id="progressText">
+                        Soal 1/5
+                    </span>
+                </div>
+
+                <div class="timer-box">
+                    ⏱️
+                    <span id="timer">15</span>
+                    detik
+                </div>
+
+            </div>
+
+
+            <div class="progress-wrapper">
+                <div
+                    id="progressBar"
+                    class="progress-bar"
+                ></div>
+            </div>
+
+
+            <div
+                id="questionCard"
+                class="question-card"
+            >
+
+                <div class="question-meta">
+
+                    <span
+                        id="categoryBadge"
+                        class="category-badge"
+                    >
+                        JavaScript
+                    </span>
+
+                    <span id="questionNumber">
+                        #1
+                    </span>
+
+                </div>
+
+                <h2 id="question"></h2>
+
+                <div
+                    id="options"
+                    class="options-grid"
+                ></div>
+
+                <div
+                    id="feedback"
+                    class="feedback hidden"
+                ></div>
+
+                <button
+                    id="nextBtn"
+                    class="primary-btn hidden"
+                    type="button"
+                >
+                    Soal Berikutnya →
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- RESULT SCREEN -->
+        <section
+            id="resultScreen"
+            class="result-screen hidden"
+        >
+
+            <div class="result-card">
+
+                <div class="result-icon">
+                    🏆
+                </div>
+
+                <h2>Quiz Selesai!</h2>
+
+                <p class="result-label">
+                    Skor Kamu
+                </p>
+
+                <p
+                    id="finalScore"
+                    class="final-score"
+                >
+                    0/5
+                </p>
+
+                <p
+                    id="scorePercentage"
+                    class="score-percentage"
+                >
+                    0%
+                </p>
+
+                <div class="result-details">
+
+    <div class="result-detail">
+        <span>✅ Jawaban Benar</span>
+        <strong id="correctCount">0</strong>
+    </div>
+
+    <div class="result-detail">
+        <span>❌ Jawaban Salah</span>
+        <strong id="wrongCount">0</strong>
+    </div>
+
+    <div class="result-detail">
+        <span>📚 Kategori</span>
+        <strong id="resultCategory">Semua Kategori</strong>
+    </div>
+
+</div>
+
+                <div class="high-score-box">
+                    <span>🏅 High Score</span>
+
+                    <strong id="highScore">
+                        0%
+                    </strong>
+                </div>
+
+                <p
+                    id="resultMessage"
+                    class="result-message"
+                ></p>
+
+                <button
+                    id="restartBtn"
+                    class="primary-btn"
+                    type="button"
+                >
+                    🔄 Ulangi Quiz
+                </button>
+
+                <button
+    id="menuBtn"
+    class="secondary-btn"
+    type="button"
+>
+    ← Kembali ke Menu
+</button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="app.js"></script>
+
+</body>
+</html>
