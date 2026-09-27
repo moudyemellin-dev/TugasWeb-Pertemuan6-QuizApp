@@ -37,6 +37,6 @@ Interactive Quiz App dibuat menggunakan HTML, CSS, dan JavaScript dengan penerap
 - Event Delegation
 - LocalStorage
 
-## Mata Kuliah
+## Live Demo
 
-Pemrograman Web
+🧠 [Buka Interactive Quiz App](https://moudyemellin-dev.github.io/TugasWeb-Pertemuan6-QuizApp/)
