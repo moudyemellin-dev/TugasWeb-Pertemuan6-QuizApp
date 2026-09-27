@@ -39,4 +39,4 @@ Interactive Quiz App dibuat menggunakan HTML, CSS, dan JavaScript dengan penerap
 
 ## Live Demo
 
-🧠 [Buka Interactive Quiz App](https://moudyemellin-dev.github.io/TugasWeb-Pertemuan6-QuizApp/)
+🌐 [Buka Interactive Quiz App](https://moudyemellin-dev.github.io/TugasWeb-Pertemuan6-QuizApp/)
